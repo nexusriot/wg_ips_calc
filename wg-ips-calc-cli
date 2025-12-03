@@ -1,0 +1,3 @@
+#!/bin/env bash
+
+python3 /usr/lib/wg_ips_calc/wg_ips_cli.py

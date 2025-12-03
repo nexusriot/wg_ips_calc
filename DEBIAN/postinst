@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mv /usr/lib/wg_ips_calc/wg-ips-calc.desktop /usr/share/applications/wg-ips-calc.desktop

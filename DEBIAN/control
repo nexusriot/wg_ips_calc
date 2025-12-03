@@ -1,0 +1,7 @@
+Package: wg-ips-calc
+Version: _version_
+Architecture: amd64
+Maintainer: Vladislav Ananev <nexus.riot@gmail.com>
+Description:Simple Opensource simple calculator for wireguard allowed ip
+Installed-Size: 50
+Depends: python3 (>=3.7), python3-pyqt5

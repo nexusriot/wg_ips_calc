@@ -8,6 +8,7 @@ import json
 import platform
 from datetime import datetime
 
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (
     QApplication,
     QWidget,
@@ -24,11 +25,8 @@ from PyQt5.QtWidgets import (
     QAction,
     QMainWindow
 )
-from PyQt5.QtCore import Qt
 
 from wg_ips_core import calculate_allowed_ips, VERSION
-
-
 
 def get_config_dir(app_name: str = "wg_allowed_ips") -> str:
     """
@@ -36,7 +34,7 @@ def get_config_dir(app_name: str = "wg_allowed_ips") -> str:
 
     Linux:   ~/.config/<app_name>
     macOS:   ~/Library/Application Support/<app_name>
-    Windows: %APPDATA%\<app_name> (fallback: ~\<app_name>)
+    Windows: %APPDATA%\\<app_name> (fallback: ~\\<app_name>)
     """
     home = os.path.expanduser("~")
     system = platform.system()
@@ -218,7 +216,7 @@ class AllowedIPsCalculator(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        self.app_name = "wg_allowed_ips"
+        self.app_name = "wg-ips-calc"
         self.config_dir = get_config_dir(self.app_name)
         self.config_path = os.path.join(self.config_dir, "config.json")
         self.history_path = os.path.join(self.config_dir, "history.json")

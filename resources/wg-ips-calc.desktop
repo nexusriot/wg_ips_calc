@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Wireguard Allowed IPs
+GenericName=wg_allowed_ips
+Exec=/usr/bin/wg-ips-calc %U
+Terminal=false
+Icon=/usr/lib/wg_ips_calc/icon.png
+Type=Application
+Categories=Application;Network;
+Comment=Wireguard Allowed Ips Calculator
