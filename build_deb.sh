@@ -1,7 +1,7 @@
 #!/bin/env bash
 set -e
 
-version=0.1
+version=0.2
 
 echo "building deb for wg_ips_calc $version"
 

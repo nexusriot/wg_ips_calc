@@ -291,13 +291,13 @@ python3 wg_ips_gui.py
 The CLI wrapper uses the same logic as the GUI, but reads inputs from flags:
 
 ```bash
-python3 wg_allowed_ips_cli.py   -a "0.0.0.0/0, ::/0"   -d "37.27.12.178, 10.74.0.3/32, 10.74.0.1"
+python3 wg_ips_cli.py   -a "0.0.0.0/0, ::/0"   -d "37.27.12.178, 10.74.0.3/32, 10.74.0.1"
 ```
 
 or with short flags:
 
 ```bash
-python3 wg_allowed_ips_cli.py   -a "10.0.0.0/8"   -d "10.0.0.1, 10.0.0.2"
+python3 wg_ips_cli.py   -a "10.0.0.0/8"   -d "10.0.0.1, 10.0.0.2"
 ```
 
 Result is printed to stdout; you can redirect it or capture it in scripts.

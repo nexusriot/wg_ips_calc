@@ -7,7 +7,7 @@ import re
 import ipaddress
 from typing import List, Tuple
 
-VERSION = 0.1
+VERSION = 0.2
 
 
 def parse_ip_list(text: str):
